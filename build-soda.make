@@ -4,7 +4,7 @@ core = "7.x"
 api = "2"
 
 ; include the d.o. profile base
-includes[] = drupal-org.make
+includes[core] = drupal-org-core.make
 
 ; Profile
 projects[soda][type] = profile
