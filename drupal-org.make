@@ -16,6 +16,9 @@ projects[admin_views][subdir] = "contrib"
 projects[fasttoggle][version] = "1.6"
 projects[fasttoggle][subdir] = "contrib"
 
+projects[strongarm][version] = "2.0"
+projects[strongram][subdir] = "contrib"
+
 projects[module_filter][version] = "2.0"
 projects[module_filter][subdir] = "contrib"
 
@@ -78,9 +81,6 @@ projects[auto_entitylabel][subdir] = "contrib"
 
 projects[backup_migrate][version] = "3.0"
 projects[backup_migrate][subdir] = "contrib"
-
-projects[blockexport][version] = "2.0"
-projects[blockexport][subdir] = "contrib"
 
 projects[blockify][version] = "1.2"
 projects[blockify][subdir] = "contrib"
