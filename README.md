@@ -25,7 +25,7 @@ Requires drush version 6.x or 7.x.
 Create a full version with drush make:
 
 ``` bash
-git clone --branch 7.x-1.x https://github.com/drupal-soda/soda-profile
+git clone --branch 7.x-1.x git@github.com:drupal-soda/soda-profile.git
 cd soda-profile
 drush make --prepare-install build-soda.make webroot
 cd webroot
