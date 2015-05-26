@@ -72,7 +72,6 @@ dependencies[] = oauth_common_providerui
 dependencies[] = aes
 dependencies[] = auto_entitylabel
 dependencies[] = backup_migrate
-dependencies[] = blockexport
 dependencies[] = blockify
 dependencies[] = boolean_formatter
 dependencies[] = clone
@@ -123,32 +122,9 @@ dependencies[] = views_data_export
 dependencies[] = views_ui
 ; Features
 dependencies[] = features
-dependencies[] = blockexport
-dependencies[] = soda_blocks
+dependencies[] = soda_variables
 dependencies[] = soda_formats
+dependencies[] = soda_blocks
 dependencies[] = soda_node_types
 dependencies[] = soda_roles
 dependencies[] = soda_views
-
-; ----------
-; Variables
-; ----------
-variables[site_frontpage] = 'admin/datasets'
-
-variables[admin_theme] = 'adminimal'
-variables[node_admin_theme] = '1'
-variables[theme_default] = 'adminimal'
-
-variables[contentapi_content_types] = 'a:0:{}'
-variables[contentapi_limit] = 10
-variables[contentapi_node_hidden_fields] = 'a:0:{}'
-variables[contentapi_show_count] = true
-variables[contentapi_sort_field] = 'created'
-variables[contentapi_sort_order] = 'DESC'
-
-variables[date_default_timezone] = 'Europe/Athens'
-variables[default_nodes_main] = '10'
-
-variables[services_security_update_1] = true
-
-variables[user_register] = 0
