@@ -48,6 +48,7 @@ dependencies[] = devel_generate
 dependencies[] = profiler_builder
 ; Features extra
 dependencies[] = fe_block
+dependencies[] = strongarm
 ; Feeds
 dependencies[] = feeds
 dependencies[] = feeds_tamper
