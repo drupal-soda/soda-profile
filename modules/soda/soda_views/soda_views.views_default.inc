@@ -471,12 +471,13 @@ print \'<div class="node-import">\' . $link_import . \'</div>\';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '100';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'type_1' => 'type_1',
     'type' => 'type',
+    'type_1' => 'type_1',
     'title' => 'title',
     'created' => 'created',
     'changed' => 'changed',
@@ -488,14 +489,14 @@ print \'<div class="node-import">\' . $link_import . \'</div>\';
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'type_1' => array(
+    'type' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'type' => array(
+    'type_1' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -549,6 +550,7 @@ print \'<div class="node-import">\' . $link_import . \'</div>\';
       'empty_column' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['empty_table'] = TRUE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
@@ -669,21 +671,16 @@ $params = array(\'query\' => array($destination), \'external\' => TRUE);
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = '1';
+  $handler->display->display_options['filters']['status']['value'] = 'All';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['exposed'] = TRUE;
   $handler->display->display_options['filters']['status']['expose']['operator_id'] = '';
   $handler->display->display_options['filters']['status']['expose']['label'] = 'Published';
   $handler->display->display_options['filters']['status']['expose']['operator'] = 'status_op';
   $handler->display->display_options['filters']['status']['expose']['identifier'] = 'status';
-  $handler->display->display_options['filters']['status']['expose']['required'] = TRUE;
   $handler->display->display_options['filters']['status']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
-    6 => 0,
-    5 => 0,
-    4 => 0,
-    3 => 0,
   );
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
