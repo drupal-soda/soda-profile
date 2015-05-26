@@ -97,7 +97,9 @@ function soda_install() {
   $features = array(
     'soda_blocks',
     'soda_node_types',
-    'soda_views'
+    'soda_views',
+    'soda_formats',
+    'soda_roles'
   );
   features_revert($features);
   // ignore any rebuild messages
