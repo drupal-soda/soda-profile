@@ -2,7 +2,7 @@
 This is the installation profile for Drupal SODA distribution.
 
 ## What is SODA?
-*Small Open DAta framework* is a web based platform aimed to solve the fundamental problem of the *[Open Data](http://opendefinition.org/od/) which is:
+*Small Open DAta framework* is a web based platform aimed to solve the fundamental problem of the [Open Data](http://opendefinition.org/od/) which is:
 
 > "Where is the data?"
 
