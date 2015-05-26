@@ -5,100 +5,15 @@
  * Perform actions to set up the site for this profile.
  */
 function soda_install() {
-  // Enable some soda blocks.
-  $default_theme = 'adminimal';
-  $admin_theme = 'adminimal';
-  // disable all themes
-  db_update('system')
-    ->fields(array('status' => 0))
-    ->condition('type', 'theme')
-    ->execute();
-  // enable $default_theme
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', $default_theme)
-    ->execute();
-  // enable $admin_theme
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', $admin_theme)
-    ->execute();
-  variable_set('theme_default', $default_theme);
-  variable_set('admin_theme', $admin_theme);
-  // activate admin theme when editing a node
-  variable_set('node_admin_theme', '1');
-  $blocks = array(
-    array(
-      'module' => 'system',
-      'delta' => 'main',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'user',
-      'delta' => 'login',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'sidebar_first',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'help',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => -10,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'main',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'content',
-      'pages' => '',
-      'cache' => -1,
-    ),
-    array(
-      'module' => 'system',
-      'delta' => 'help',
-      'theme' => $admin_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'help',
-      'pages' => '',
-      'cache' => -1,
-    ),
-  );
-  // drop system / user blocks to ensure correct building
-  db_delete('block')->condition('module', 'system')->execute();
-  db_delete('block')->condition('module', 'user')->execute();
-  // add in our blocks defined above
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
-  foreach ($blocks as $block) {
-    $query->values($block);
-  }
-  $query->execute();
-  
   // Update the menu router information.
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
+    'soda_variables',
     'soda_blocks',
+    'soda_formats',
     'soda_node_types',
     'soda_views',
-    'soda_formats',
     'soda_roles'
   );
   features_revert($features);
