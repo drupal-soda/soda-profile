@@ -173,7 +173,7 @@ projects[views_data_export][subdir] = "contrib"
 
 ; adminimal_theme
 projects[adminimal_theme][type] = "theme"
-projects[adminimal_theme][subdir] = "themes"
+projects[adminimal_theme][subdir] = "contrib"
 
 ; +++++ Libraries +++++
 
