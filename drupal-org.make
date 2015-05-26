@@ -79,6 +79,9 @@ projects[auto_entitylabel][subdir] = "contrib"
 projects[backup_migrate][version] = "3.0"
 projects[backup_migrate][subdir] = "contrib"
 
+projects[blockexport][version] = "2.0"
+projects[blockexport][subdir] = "contrib"
+
 projects[blockify][version] = "1.2"
 projects[blockify][subdir] = "contrib"
 
