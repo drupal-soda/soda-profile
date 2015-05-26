@@ -1,0 +1,135 @@
+; Packaging information for soda
+name = "Soda"
+description = "S.O.D.A - Small Open DAta framework"
+exclusive = "1"
+core = "7.x"
+version = "7.x-1.0"
+
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_theme
+dependencies[] = admin_views
+dependencies[] = fasttoggle
+dependencies[] = fasttoggle_node
+dependencies[] = module_filter
+; Authentication
+dependencies[] = user_registrationpassword
+; Chaos tool suite
+dependencies[] = ctools
+; Content management
+dependencies[] = remove_duplicates
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = field
+dependencies[] = field_sql_storage
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = php
+dependencies[] = rdf
+dependencies[] = system
+dependencies[] = text
+dependencies[] = user
+; Date/Time
+dependencies[] = date_api
+; Development
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = profiler_builder
+; Features extra
+dependencies[] = fe_block
+; Feeds
+dependencies[] = feeds
+dependencies[] = feeds_tamper
+dependencies[] = feeds_tamper_ui
+dependencies[] = feeds_ui
+; Fields
+dependencies[] = bundle_copy
+dependencies[] = field_validation
+dependencies[] = field_validation_ui
+dependencies[] = filefield_paths
+dependencies[] = geofield
+; Geolocation
+dependencies[] = geolocation
+dependencies[] = geolocation_googlemaps
+dependencies[] = geolocation_html5
+; Mirrors
+dependencies[] = mirrors
+; OAuth
+dependencies[] = oauth_common
+dependencies[] = oauth_common_providerui
+; Other
+dependencies[] = aes
+dependencies[] = auto_entitylabel
+dependencies[] = backup_migrate
+dependencies[] = blockify
+dependencies[] = boolean_formatter
+dependencies[] = clone
+dependencies[] = content_type_extras
+dependencies[] = custom_pub
+dependencies[] = diff
+dependencies[] = email_registration
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = geocoder
+dependencies[] = geophp
+dependencies[] = image_url_formatter
+dependencies[] = job_scheduler
+dependencies[] = legal
+dependencies[] = libraries
+dependencies[] = restws
+dependencies[] = soda_extra
+dependencies[] = token
+; RDF
+dependencies[] = rdfui
+dependencies[] = rdfx
+dependencies[] = sparql
+dependencies[] = sparql_endpoint
+dependencies[] = sparql_registry
+; Security
+dependencies[] = dbee
+; Services
+dependencies[] = services
+dependencies[] = services_definition
+dependencies[] = services_entity
+; Services - authentication
+dependencies[] = services_oauth
+; Services - resources
+dependencies[] = contentapi
+dependencies[] = contentapi_summary
+; Services - servers
+dependencies[] = rest_server
+; Spam control
+dependencies[] = anonymous_publishing
+dependencies[] = anonymous_publishing_cl
+dependencies[] = anonymous_publishing_lr
+dependencies[] = anonymous_publishing_pet
+dependencies[] = honeypot
+; Views
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_data_export
+dependencies[] = views_ui
+; Features
+dependencies[] = features
+dependencies[] = soda_blocks
+dependencies[] = soda_node_types
+dependencies[] = soda_views
+
+; ----------
+; Variables
+; ----------
+variables[admin_theme] = 'adminimal'
+variables[admin_theme_admin_theme_batch] = 1
+variables[admin_theme_admin_theme_devel] = 1
+

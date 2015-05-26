@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_init().
+ */
+function soda_extra_init() {
+	$basepath = drupal_get_path('module', 'soda_extra');
+	
+	// Override adminimal theme
+	drupal_add_css($basepath . '/css/soda_extra.css', array('type' => 'file', 'weight' => 999));
+  
+  // Add a variable for uid. See at https://drupal.org/node/828916
+  global $user;
+  drupal_add_js(array('currentUser' => $user->uid), 'setting');
+}
+
+/**
+ * Implements hook_username_alter()
+ */
+function soda_extra_username_alter(&$name, $account) {
+  $user = user_load($account->uid);
+  $role = end($user->roles); 
+  if ($role) {
+  	// Alter user names to display the user role instead of original username.
+    $name = t($role, array('!uid' => $account->uid));
+  }
+}
+

@@ -1,0 +1,4 @@
+name = "Soda extras"
+description = "Custom module for SODA distribution"
+core = 7.x
+version = 7.x-1.0

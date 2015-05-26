@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Soda Content types feature.
+ */
+
+include_once 'soda_node_types.features.inc';

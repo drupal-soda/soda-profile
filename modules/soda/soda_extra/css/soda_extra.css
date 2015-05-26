@@ -1,0 +1,56 @@
+body, #page {
+  background: #fff;
+}
+
+#logo, 
+#logo img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Views Datasets */
+.view-header {
+  clear: both;
+  overflow: hidden;
+}
+
+.view-dataset-manager .view-header,
+.view-public-datasets .view-header {
+  background: #FAFAFA;
+  border: 1px solid #ddd;
+  padding: 1em;
+}
+
+.view-public-datasets .view-header ul {
+  float: left;
+  padding: 0 1em;
+}
+
+.node-add,
+.node-import {
+  display: inline-block;
+}
+
+div a.button,
+a.button-yes {
+  color: #fff !important;
+  display: block;
+  background: #0074BD;
+}
+
+.block {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #eee;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 2.3em;
+}
+
+ul.action-links li {
+  float: right;
+  margin: 0 1em 0 0;
+}
+
