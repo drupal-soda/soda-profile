@@ -129,7 +129,21 @@ dependencies[] = soda_views
 ; ----------
 ; Variables
 ; ----------
+variables[site_frontpage] = 'admin/datasets'
+
 variables[admin_theme] = 'adminimal'
 variables[admin_theme_admin_theme_batch] = 1
 variables[admin_theme_admin_theme_devel] = 1
+variables[node_admin_theme] = 1
 
+variables[user_register] = '0'
+variables[user_cancel_method] = 'user_cancel_reassign'
+
+variables[contentapi_content_types] = 'a:0:{}'
+variables[contentapi_limit] = 10
+variables[contentapi_node_hidden_fields] = 'a:0:{}'
+variables[contentapi_show_count] = true
+variables[contentapi_sort_field] = 'created'
+variables[contentapi_sort_order] = 'DESC'
+
+variables[filter_fallback_format] = 'plain_text'
