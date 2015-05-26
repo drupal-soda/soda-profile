@@ -16,7 +16,7 @@ function soda_formats_filter_default_formats() {
     'name' => 'Filtered HTML',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -9,
     'filters' => array(
       'filter_html' => array(
         'weight' => -10,
@@ -53,7 +53,7 @@ function soda_formats_filter_default_formats() {
     'name' => 'Full HTML',
     'cache' => 1,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -8,
     'filters' => array(
       'filter_autop' => array(
         'weight' => 0,
@@ -81,7 +81,7 @@ function soda_formats_filter_default_formats() {
     'name' => 'PHP code',
     'cache' => 0,
     'status' => 1,
-    'weight' => 11,
+    'weight' => -7,
     'filters' => array(
       'php_code' => array(
         'weight' => 0,
@@ -97,7 +97,7 @@ function soda_formats_filter_default_formats() {
     'name' => 'Plain text',
     'cache' => 1,
     'status' => 1,
-    'weight' => 10,
+    'weight' => -10,
     'filters' => array(
       'filter_html_escape' => array(
         'weight' => 0,
