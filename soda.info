@@ -123,6 +123,7 @@ dependencies[] = views_data_export
 dependencies[] = views_ui
 ; Features
 dependencies[] = features
+dependencies[] = blockexport
 dependencies[] = soda_blocks
 dependencies[] = soda_formats
 dependencies[] = soda_node_types
