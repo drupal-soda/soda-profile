@@ -10,5 +10,5 @@ includes[core] = drupal-org-core.make
 projects[soda][type] = profile
 projects[soda][download][type] = git
 projects[soda][download][url] = git@github.com:drupal-soda/soda-profile.git
-projects[soda][download][branch] = 7.x-1.x
+projects[soda][download][branch] = 7.x-1.0
 
