@@ -14,7 +14,7 @@ Contribute on this project at <b>https://github.com/drupal-soda</b>.
 
 ## Installation
 
-### "Fully Drupal" version:
+### "Full Drupal" version:
 
 https://github.com/drupal-soda/soda-full
 
