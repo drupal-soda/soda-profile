@@ -1,4 +1,4 @@
-# Small Open DAta framework
+# Small Open Data framework
 This is the installation profile for Drupal SODA distribution.
 
 ## What is SODA?
