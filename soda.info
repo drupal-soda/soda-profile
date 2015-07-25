@@ -89,7 +89,6 @@ dependencies[] = job_scheduler
 dependencies[] = legal
 dependencies[] = libraries
 dependencies[] = restws
-dependencies[] = soda_extra
 dependencies[] = token
 ; RDF
 dependencies[] = rdfui
@@ -129,3 +128,5 @@ dependencies[] = soda_blocks
 dependencies[] = soda_node_types
 dependencies[] = soda_roles
 dependencies[] = soda_views
+; Custom (for current profile)
+dependencies[] = soda_extra
