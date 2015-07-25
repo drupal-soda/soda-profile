@@ -148,14 +148,8 @@ projects[services_entity][subdir] = "contrib"
 projects[services_tools][version] = "3.x-dev"
 projects[services_tools][subdir] = "contrib"
 
-projects[services][version] = "3.12"
-projects[services][subdir] = "contrib"
-
 projects[contentapi][version] = "1.0-alpha3"
 projects[contentapi][subdir] = "contrib"
-
-projects[services][version] = "3.12"
-projects[services][subdir] = "contrib"
 
 projects[anonymous_publishing][version] = "1.0"
 projects[anonymous_publishing][subdir] = "contrib"
