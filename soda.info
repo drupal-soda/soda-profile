@@ -1,6 +1,6 @@
 ; Packaging information for soda
 name = "Soda"
-description = "S.O.D.A - Small Open DAta framework"
+description = "S.O.DA - Small Open DAta framework"
 core = "7.x"
 version = "7.x-1.x"
 
