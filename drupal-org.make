@@ -139,7 +139,7 @@ projects[sparql][subdir] = "contrib"
 projects[dbee][version] = "2.1"
 projects[dbee][subdir] = "contrib"
 
-projects[services][version] = "3.12"
+projects[services][version] = "3.x-dev"
 projects[services][subdir] = "contrib"
 
 projects[services_entity][version] = "2.0-alpha8"
