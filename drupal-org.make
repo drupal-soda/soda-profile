@@ -196,4 +196,4 @@ libraries[ARC2][download][type] = "get"
 libraries[ARC2][download][url] = "https://github.com/semsol/arc2/tarball/master"
 
 ; Patches
-projects[nodequeue][patch][] = https://www.drupal.org/files/services-1484992-46.patch
+projects[services][patch][] = https://www.drupal.org/files/services-1484992-46.patch
