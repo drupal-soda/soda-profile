@@ -1,7 +1,11 @@
-Full instructions and more info on the official docs:
+Project page:
+ - [sodadrupal.com](http://www.sodadrupal.com)
 
- - [soda-docs.readthedocs.org](http://soda-docs.readthedocs.org/)
+Full instructions and more info on the official docs:
+ - [soda.readthedocs.org](http://soda.readthedocs.org)
 
 Get the full installation profile here:
  - [github.com/drupal-soda/soda-full](https://github.com/drupal-soda/soda-full)
- 
+
+Drupal.org project:
+ - [drupal.org/project/soda](https://www.drupal.org/project/soda)
