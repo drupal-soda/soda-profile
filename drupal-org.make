@@ -4,16 +4,16 @@ api = "2"
 
 ; +++++ Modules +++++
 
-projects[admin_menu][version] = "3.0-rc5"
+;projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 
-projects[admin_theme][version] = "1.0"
+;projects[admin_theme][version] = "1.0"
 projects[admin_theme][subdir] = "contrib"
 
-projects[admin_views][version] = "1.4"
+;projects[admin_views][version] = "1.4"
 projects[admin_views][subdir] = "contrib"
 
-projects[fasttoggle][version] = "1.6"
+;projects[fasttoggle][version] = "1.6"
 projects[fasttoggle][subdir] = "contrib"
 
 projects[strongarm][version] = "2.0"
