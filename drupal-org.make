@@ -194,6 +194,3 @@ libraries[ARC2][type] = "library"
 libraries[ARC2][destination] = "libraries"
 libraries[ARC2][download][type] = "get"
 libraries[ARC2][download][url] = "https://github.com/semsol/arc2/tarball/master"
-
-; Patches
-projects[services][patch][] = https://www.drupal.org/files/services-1484992-46.patch
