@@ -6,3 +6,6 @@ Full instructions and more info on the official docs:
 
 Drupal.org project:
  - [drupal.org/project/soda](https://www.drupal.org/project/soda)
+
+License:
+ - [GPL V2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
